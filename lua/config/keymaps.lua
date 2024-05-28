@@ -32,6 +32,8 @@ keymap.set("i", "kj", "<Esc>")
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
+-- Select all
+keymap.set("v", "ii", "<Esc>")
 -- Save with root permission (not working for now)
 --vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
 
