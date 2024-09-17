@@ -22,6 +22,11 @@ return {
 
             local luasnip = require("luasnip")
             local cmp = require("cmp")
+            cmp.setup({
+                sources = {
+                    name = "supermaven",
+                },
+            })
 
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
             require("lspconfig").rust_analyzer.setup({
